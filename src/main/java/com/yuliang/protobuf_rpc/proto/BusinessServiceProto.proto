@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "com/yuliang/protobuf_rpc/proto/BusinessProto.proto";
+option java_package = "com.yuliang.protobuf_rpc.proto";
+option java_outer_classname = "BusinessService";
+option java_generic_services = true;
+option java_generate_equals_and_hash = true;
+
+service BusinessServiceProto {
+  rpc buy(BusinessRequestProto) returns (BusinessResponseProto);
+}

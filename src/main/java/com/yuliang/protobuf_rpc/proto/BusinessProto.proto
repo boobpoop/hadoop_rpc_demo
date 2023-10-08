@@ -1,0 +1,15 @@
+syntax = "proto2";
+option java_package = "com.yuliang.protobuf_rpc.proto";
+option java_outer_classname = "Business";
+option java_generic_services = true;
+option java_generate_equals_and_hash = true;
+
+message BusinessRequestProto {
+  required string brand = 1;
+  required int64 num = 2;
+  required double price = 3;
+}
+
+message BusinessResponseProto {
+  required string result = 1;
+}
